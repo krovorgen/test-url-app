@@ -1,39 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Parcel template</title>
-    <link rel="stylesheet" href="scss/index.scss" />
-    <style>
-      body {
-        text-align: center;
-      }
-      a {
-        font-size: 24px;
-        display: flex;
-        margin: 24px auto;
-        width: fit-content;
-        text-align: center;
-        color: brown;
-      }
-    </style>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parcel template</title>
+  <link rel="stylesheet" href="scss/index.scss" />
+</head>
 
-  <body>
-  <a href="javascript:void(0);" data-open-link="https://infourok.ru/s/sbp">ТЕСТ1</a>
-    <a href="javascript:void(0);" onclick="location.href = 'https://infourok.ru/s/sbp'; return false;">ТЕСТ2</a>
-    <a href="https://infourok.ru/s/sbp" onclick="openInSafari(event)">ТЕСТ3</a>
-    <script>
-      function openInSafari(event) {
-        event.preventDefault(); // Предотвращает открытие ссылки по умолчанию
-        event.stopPropagation();
-        event.stopImmediatePropagation();
+<body>
 
-        var url = event.target.href;
-        window.open(url, '_system'); // Открывает ссылку в Safari
-      }
-    </script>
-    <script src="js/index.ts" type="module"></script>
-  </body>
+<a href="javascript:void(0);" onclick="window.open('https://qr.nspk.ru/BD1P002BKPOJU03N8DBOHKQPV36AFVS2?type=02&bank=100000000014&sum=141000&cur=RUB&crc=BAE1', '_blank'); return false;">ТЕСТ</a>
+<script src="js/index.ts" type="module"></script>
+</body>
 </html>
