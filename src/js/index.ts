@@ -9,7 +9,7 @@ link!.addEventListener("click", function () {
     isSafariBrowser = ua.indexOf('chrome') === -1;
   }
   if (isSafariBrowser) {
-    window.location.href = url;
+    window.open(url, '_system')
   } else {
     window.open(url, '_blank');
   }
