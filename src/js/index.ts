@@ -1,6 +1,7 @@
 const link = document.querySelector("[data-open-link]");
 
-link!.addEventListener("click", function () {
+link!.addEventListener("click", function (event) {
+  event.preventDefault();
   let isSafariBrowser = false;
   const url = link.dataset.openLink;
 
